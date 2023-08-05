@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'OldEnglish';
+    src: url('../font/OE/oldenglishfive-webfont.woff2') format('woff2'),
+    url('../font/OE/oldenglishfive-webfont.woff') format('woff');
+}
+*,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .listen {
+        text-decoration: none;
+    }
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+
+    .main-title {
+        font-family: OldEnglish;
+        color: bisque;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .intro {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 14pt;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar {
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: #333333;
+        color: bisque;
+        /* justify-content: center; */
+    }
+
+    .navbar-div {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .band-name {
+        text-decoration: none;
+        color: floralwhite;
+        font-weight: 800;
+        font-family: OldEnglish;
+        font-size: 22pt;
+    }
+
+    .navbar-links {
+        height: 100%;
+        font-family: OldEnglish;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        list-style: none;
+    }
+
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+
+    .navbar-links li:hover {
+        background-color: #555;
+    }
+
+    .toggle-button {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .toggle-button {
+            display: flex;
+        }
+
+        .navbar-links {
+            display: none;
+            width: 100%;
+            font-family: OldEnglish;
+        }
+
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links ul li {
+            text-align: center;
+        }
+
+        .navbar-links ul li a {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+
+    .hero {
+        position: relative;
+        background-color: #333;
+        background-image: url('../img/bg.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 170px;
+        background-blend-mode: darken;
+    }
+
+    .thumbnail {
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thumbnail img {
+        position: relative;
+        width: 350px;
+        cursor: pointer;
+        border: solid 1px #fff;
+        display: block;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+        transition: transform 0.3s ease;
+    }
+
+    .btn {
+        font-family: OldEnglish;
+        background-color: #fff;
+        color: #333;
+        padding: 5px;
+    }
+
+    .btn:hover {
+        background-color: #1db954;
+        color: #fff;
+        transform: scale(1.1);
+        transition: 0.7s ease-in-out;
+        box-shadow: 0 0 5px #000;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: 0.7s ease-in-out;
+    }
+
+    @media (max-width: 800px) {
+        .btn {
+            font-family: OldEnglish;
+            background-color: #fff;
+            color: #333;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14pt;
+        }
+
+        .btn:hover {
+            background-color: #1db954;
+            color: #fff;
+            transform: scale(1.1);
+            transition: 0.7s ease-in-out;
+            box-shadow: 0 0 5px #000;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .links a {
+        margin: 0 10px;
+    }
+
+    .links a:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
+    }
+
+    .soundcloud {
+        font-family: OldEnglish;
+        color: #fff;
+        background-color: transparent;
+        border: solid 2px;
+        border-color: rgba(223, 76, 8, 0.9);
+        padding: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px rgba(223, 76, 8, 0.9);
+    }
+
+    .applem {
+        font-family: OldEnglish;
+        color: #fff;
+        background-color: transparent;
+        border: solid 2px;
+        border-color: silver;
+        padding: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+    }
+
+    .spotify {
+        font-family: OldEnglish;
+        color: #fff;
+        background-color: transparent;
+        border: solid 2px;
+        border-color: #1db954;
+        padding: 5px;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px rgba(0, 255, 60, 0.9);
+    }
+
+    .march {
+        color: bisque;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    @media all and (max-width: 30em) {
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 1px;
+        }
+        .links a {
+            margin: 10px;
+        }
+
+        .soundcloud {
+            font-family: OldEnglish;
+
+            color: #fff;
+            background-color: transparent;
+            border: solid 2px;
+            border-color: rgba(223, 76, 8, 0.9);
+            padding: 5px;
+            text-decoration: none;
+            box-shadow: 0px 0px 10px rgba(223, 76, 8, 0.9);
+        }
+
+        .applem {
+            font-family: OldEnglish;
+            color: #fff;
+            background-color: transparent;
+            border: solid 2px;
+            border-color: #f8f8f8;
+            padding: 5px;
+            text-decoration: none;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+        }
+
+        .spotify {
+            font-family: OldEnglish;
+            color: #fff;
+            background-color: transparent;
+            border: solid 2px;
+            border-color: #1db954;
+            padding: 5px;
+            text-decoration: none;
+            box-shadow: 0px 0px 10px rgba(0, 255, 60, 0.9);
+        }
+
+        .march {
+            color: bisque;
+            text-decoration: none;
+            font-size: 10pt;
+        }
+    }
+
+    .text {
+        color: bisque;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        width: 400px;
+        font-size: 14pt;
+        word-wrap: break-word;
+        text-align: justify;
+        text-justify: auto;
+    }
+
+    @media all and (max-width: 30em) {
+        .text {
+            color: bisque;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            width: 300px;
+            font-size: 10pt;
+            word-wrap: break-word;
+        }
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        flex: 0 0 30%;
+        margin-bottom: 20px;
+    }
+
+    .footer-h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .social-icons a {
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media all and (max-width: 30em) {
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 0 0 30%;
+            margin-bottom: 20px;
+        }
+
+        .footer-h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
