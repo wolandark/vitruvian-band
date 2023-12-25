@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Your Telegram Bot API endpoint and chat ID
     $botToken = '6378177672:AAHBvKEgUKvXIVOPnov3eWKky3MizkaixYQ';
-    $chatID = '61439392';
+    $chatID = '-266945114';
 
     // URL to send the message to the Telegram Bot API
     $url = "https://api.telegram.org/bot{$botToken}/sendMessage?chat_id={$chatID}&text={$message}";
