@@ -42,11 +42,63 @@
             }
             input:hover {
                 background-color: #444;
-                    color: #fefefe;
+                color: #fefefe;
             }
-                        .button-container {
-               display: flex;
-               justify-content: flex-end;
+            .button-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .contact-us { 
+                color: #f2f2f2;
+                background-color: #333; 
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                width: 25%; 
+                margin: 0 auto;
+                margin-top: 2em;
+                padding: 20px; 
+                box-shadow: 0 0 50px silver; 
+                border: 1px solid silver;
+                border-radius: 0;"
+            }
+
+            @media all and (max-width: 30em) {
+               textarea{
+                background-color: #f8f8f8;
+                height: 100px;
+                width: 350px;
+                }
+                .footer-contact{
+                position: relative;
+                }
+                .footer-content{
+                margin: 11px;
+                }
+                .contact-us {
+                    margin-top: 2em;
+                    width: 80%;
+                }
+            @media all and (height: 844px) {
+                .footer-contact {
+                    position: fixed;
+                }
+            }
+            @media all and (height: 932px) {
+                .footer-contact {
+                    position: fixed;
+                }
+            }
+            @media all and (height: 915px) {
+                .footer-contact {
+                    position: fixed;
+                }
+            }
+            @media all and (height: 914px) {
+                .footer-contact {
+                    position: fixed;
+                }
             }
         </style>
     </head>
@@ -76,32 +128,29 @@
         <div>
             <br> 
 
-  <div style="color: #f2f2f2; background-color: #333; display: flex;
-      justify-content: center; align-items: center; width: 50%; margin: 0 auto;
-      padding: 20px;  box-shadow: 0 0 50px silver; border: 1px solid silver;
-      border-radius: 0; ">
-      To contact us, write to our email at the bottom of the page <br> or use the form below.
-    </div>
+            <div class="contact-us">
+                To contact us, write to our email at the bottom of the page <br> or use the form below.
+            </div>
 
-    <div class="form-container">
-    
-<form action="submit.php" method="post">
-        <label for="message">Enter your message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-        <div class="button-container">
-        
-        <input type="submit" value="Submit">
+            <div class="form-container">
+
+                <form action="submit.php" method="post">
+                    <label for="message">Enter your message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    <div class="button-container">
+
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
-</form>
-</div>
-                </div>
-                <br> 
+        <br> 
         <footer class="footer-contact">
             <div class="footer-content">
                 <div class="footer-section">
                     <h2 class="footer-h2">About Us</h2>
                     <p class="footer-p">
-                    Vitruvian is a Black Metal band from a forgotton land.
+                        Vitruvian is a Black Metal band from a forgotton land.
                     </p>
                     <a
                         class="march"
@@ -110,39 +159,39 @@
                         >Metal Archives</a
                     >
                 </div>
-                        <div class="footer-section">
-                            <h2 class="footer-h2">Contact</h2>
-                            <p class="footer-p" style="color: bisque;">
-                            <i class="bi bi-envelope-at-fill"></i>: vitruvian-band@email.com
-                            </p>
-                        </div>
-                        <div class="footer-section">
-                            <h2 class="footer-h2">Follow Us</h2>
-                            <div class="social-icons">
-                                <a
-                                    style="color: rgb(239, 3, 137);"
-                                    href="https://instagram.com/vitruvian_band?igshid=MzRlODBiNWFlZA=="
-                                    target="_blank"
-                                    ><i class="bi bi-instagram"></i
-                                    ></a>
-                                <a
-                                    style="color: #22aeff;"
-                                    href="https://t.me/vitruvian_band"
-                                    target="_blank"
-                                    ><i class="bi bi-telegram"></i
-                                    ></a>
-                                <a
-                                    style="color: #0F0;"
-                                    href="https://open.spotify.com/album/3dtZVRPFmlreB5RYI891Ga?si=CcVzKE9ZRQywTBqLdNz7vA&utm_source=copy-link"
-                                    target="_blank"
-                                    ><i class="bi bi-spotify"></i
-                                    ></a>
-                            </div>
-                        </div>
+                <div class="footer-section">
+                    <h2 class="footer-h2">Contact</h2>
+                    <p class="footer-p" style="color: bisque;">
+                        <i class="bi bi-envelope-at-fill"></i>: vitruvian-band@email.com
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h2 class="footer-h2">Follow Us</h2>
+                    <div class="social-icons">
+                        <a
+                            style="color: rgb(239, 3, 137);"
+                            href="https://instagram.com/vitruvian_band?igshid=MzRlODBiNWFlZA=="
+                            target="_blank"
+                            ><i class="bi bi-instagram"></i
+                            ></a>
+                        <a
+                            style="color: #22aeff;"
+                            href="https://t.me/vitruvian_band"
+                            target="_blank"
+                            ><i class="bi bi-telegram"></i
+                            ></a>
+                        <a
+                            style="color: #0F0;"
+                            href="https://open.spotify.com/album/3dtZVRPFmlreB5RYI891Ga?si=CcVzKE9ZRQywTBqLdNz7vA&utm_source=copy-link"
+                            target="_blank"
+                            ><i class="bi bi-spotify"></i
+                            ></a>
+                    </div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p class="footer-p">
-                &copy; 2023 Vitruvian, Designed by Woland under GNU License
+                    &copy; 2023 Vitruvian, Designed by Woland under GNU License
                 </p>
             </div>
         </footer>
