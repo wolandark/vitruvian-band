@@ -2,14 +2,22 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+// function changeText() {
+//     collapsible.textContent = 'Button Clicked!';
+// }
+
+// collapsible.addEventListener('click', changeText);
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+       this.textContent = 'Unfold';
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
+      this.textContent = 'Fold';
     }
   });
 }
